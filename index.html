@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="theme-color" content="#363636">
+<title>The Hayley Williams Show — Creá tu portada del tour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto+Condensed:ital,wght@1,600..900&display=swap"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ============================ PANTALLA 1 — INICIO ==================== -->
+  <section class="screen s1" id="s1">
+    <div class="s1-stage">
+      <img class="s1-polaroid left" src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a677c78798e2961cceace76_hayley_portada%402x.jpg" alt="" aria-hidden="true">
+      <img class="s1-polaroid right" src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a677c78798e2961cceace76_hayley_portada%402x.jpg" alt="" aria-hidden="true">
+      <div class="s1-center">
+        <img class="s1-polaroid-top" src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a677c78798e2961cceace76_hayley_portada%402x.jpg" alt="" aria-hidden="true">
+        <div class="tour-logo" aria-label="The Hayley Williams Show — Tour">
+          <img class="tour-logo-img" src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a62657947b72efcfcbabe90_tour.svg" alt="The Hayley Williams Show — Tour">
+        </div>
+        <p class="s1-copy">
+          <span class="l1">Creá tu portada del tour</span>
+          <span class="l2">Y compartila con tus amigos</span>
+        </p>
+        <button class="btn-svg s1-empezar" data-go="2" type="button" aria-label="Empezar">
+          <img src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a6269a46aad24c0616d98e1_empezar.svg" alt="Empezar">
+        </button>
+      </div>
+    </div>
+    <div class="zocalo">
+      <img src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a626579d0e0d94066816978_zocalo.webp" alt="ALLACCESS - Live Nation - DF - Tickets at hayleywilliams.net">
+    </div>
+  </section>
+
+  <!-- ================== PANTALLA 2 — PASO 1: SUBI TU FOTO ============== -->
+  <section class="screen s2" id="s2">
+    <div class="prog">
+      <span class="prog-label">Paso 1 de 4</span>
+      <div class="prog-dashes"><i class="on"></i><i></i><i></i><i></i></div>
+    </div>
+
+    <div class="head">
+      <h1 class="title">Subí tu foto</h1>
+      <p class="sub">Elegí una foto de tu cara bien iluminada y de frente.<br>Después la vas a poder encuadrar.</p>
+    </div>
+
+    <div class="pick">
+      <div class="pick-card is-drop" id="drop" tabindex="0" role="button" aria-label="Subir una foto">
+        <span class="pick-ico" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="9" width="36" height="30"/>
+            <circle cx="17" cy="19" r="3.4"/>
+            <path d="M6 33l10-9 8 7 6-5 12 10"/>
+          </svg>
+        </span>
+        <h2 class="pick-title">Subí una foto</h2>
+        <p class="pick-text">Arrastrá y soltá tu imagen acá<br>o hacé clic para buscar</p>
+        <span class="pick-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 16v4h16v-4"/>
+          </svg>
+          Buscar archivo
+        </span>
+        <p class="pick-note">JPG · PNG · WEBP<br><span>Si pesa de más, la optimizamos sola</span></p>
+      </div>
+
+
+      <div class="pick-card">
+        <span class="pick-ico" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 15h8l4-5h14l4 5h8v23H5z"/><circle cx="24" cy="26" r="7.5"/>
+          </svg>
+        </span>
+        <h2 class="pick-title">Sacate una foto</h2>
+        <p class="pick-text">Usá la cámara de tu dispositivo<br>para sacarte una foto</p>
+        <button class="pick-btn is-solid" id="btnCamera" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13" r="3.6"/>
+          </svg>
+          Abrir cámara
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile: dos botones directos en lugar de las tarjetas -->
+    <div class="pick-mobile">
+      <button class="pick-mbtn" id="btnGalleryM" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="16"/><circle cx="8.5" cy="10" r="1.8"/>
+          <path d="M3 17l5-4 4 3 3-2 6 5"/>
+        </svg>
+        Buscar en galería
+      </button>
+      <button class="pick-mbtn" id="btnCameraM" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13" r="3.6"/>
+        </svg>
+        Sacate una foto
+      </button>
+    </div>
+
+    <p class="file-err" id="fileErr" role="alert"></p>
+
+    <input class="visually-hidden" type="file" id="fileInput"
+           accept="image/jpeg,image/png,image/webp">
+    <input class="visually-hidden" type="file" id="camInput"
+           accept="image/*" capture="user">
+
+    <div class="actions">
+      <button class="btn-svg btn-back is-sm" data-back="1" type="button" aria-label="Volver">
+        <img src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a6269a5be5e5fd23dddffa3_volver.svg" alt="Volver">
+      </button>
+    </div>
+  </section>
+
+  <!-- ================== PANTALLA 3 — PASO 2: REENCUADRA ================ -->
+  <section class="screen s3" id="s3">
+    <div class="prog">
+      <span class="prog-label">Paso 2 de 4</span>
+      <div class="prog-dashes"><i class="on"></i><i class="on"></i><i></i><i></i></div>
+    </div>
+
+    <div class="head">
+      <h1 class="title">Reencuadrá</h1>
+      <p class="sub">Arrastrá para mover, pellizcá para zoom y rotar</p>
+    </div>
+
+    <div class="crop-holder">
+      <div class="crop-stage" id="cropStage">
+      <canvas class="crop-canvas" id="cropCanvas"></canvas>
+        <img class="crop-guide" src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a6265799156ec8b9eef0c0e_refe_facial.svg" alt="" aria-hidden="true">
+      </div>
+    </div>
+
+    <div class="crop-ctrls">
+      <div class="ctrl">
+        <label for="zoomRange">Zoom</label>
+        <input type="range" id="zoomRange" min="40" max="500" value="100" step="1">
+      </div>
+      <div class="ctrl">
+        <label for="rotRange">Rotar</label>
+        <input type="range" id="rotRange" min="-180" max="180" value="0" step="1">
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn-svg btn-back is-sm" data-back="2" type="button" aria-label="Volver">
+        <img src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a6269a5be5e5fd23dddffa3_volver.svg" alt="Volver">
+      </button>
+      <div class="actions-main">
+        <button class="btn-svg is-sm" id="cropReset" type="button" aria-label="Reiniciar">
+          <img src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a6269a58626cb95132de1eb_reiniciar.svg" alt="Reiniciar">
+        </button>
+        <button class="btn-svg" id="cropConfirm" type="button" aria-label="Listo">
+          <img src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a6269a5ac5291ea2d73deff_listo.svg" alt="Listo">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PANTALLA 4 — PASO 3: ELEGI TU PORTADA ============== -->
+  <section class="screen s4" id="s4">
+    <div class="prog">
+      <span class="prog-label">Paso 3 de 4</span>
+      <div class="prog-dashes"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+    </div>
+
+    <div class="head">
+      <h1 class="title">Elegí tu portada</h1>
+    </div>
+
+    <div class="car-stage" id="carStage">
+      <div class="car-slot car-peek left"><img id="carLeft" alt=""></div>
+      <div class="car-slot car-main"><img id="carMain" alt="Portada seleccionada"></div>
+      <div class="car-slot car-peek right"><img id="carRight" alt=""></div>
+      <button class="car-arrow prev" id="carPrev" type="button" aria-label="Anterior">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3L7 12l9 9" fill="none" stroke="#363636" stroke-width="4.5" stroke-linecap="square"/></svg>
+      </button>
+      <button class="car-arrow next" id="carNext" type="button" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3l9 9-9 9" fill="none" stroke="#363636" stroke-width="4.5" stroke-linecap="square"/></svg>
+      </button>
+    </div>
+
+    <div class="dots" id="carDots"></div>
+
+    <div class="actions">
+      <button class="btn-svg btn-back is-sm" data-back="3" type="button" aria-label="Volver">
+        <img src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a6269a5be5e5fd23dddffa3_volver.svg" alt="Volver">
+      </button>
+      <div class="actions-main">
+        <button class="btn-svg" id="arteConfirm" type="button" aria-label="Continuar">
+          <img src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a6269a52aad6ebd2bea8517_continuar.svg" alt="Continuar">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== PANTALLA 5 — TU PORTADA ======================== -->
+  <section class="screen s5" id="s5">
+    <div class="result-wrap">
+      <div class="result-frame" id="resultFrame"></div>
+
+      <div class="result-panel">
+        <h1 class="title">¡Listo!</h1>
+        <p class="sub">Compartí tu poster en historias<br>y etiquetá a @dfentertainment<br>¡Nos vemos en el show!</p>
+        <div class="result-btns">
+          <button class="btn-svg" id="btnShare" type="button" aria-label="Compartir">
+            <img src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a6269a567f47f5abb1d50a3_compartir.svg" alt="Compartir">
+          </button>
+          <button class="btn-svg is-sm" id="btnRestart" type="button" aria-label="Reiniciar">
+            <img src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a6269a5d0e0d9406683e81d_reiniciar_1.svg" alt="Reiniciar">
+          </button>
+        </div>
+        <p class="share-note" id="shareNote"></p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn-svg btn-back is-sm" data-back="4" type="button" aria-label="Volver">
+        <img src="https://cdn.prod.website-files.com/65ce205a9737be84d29798b1/6a6269a5be5e5fd23dddffa3_volver.svg" alt="Volver">
+      </button>
+    </div>
+  </section>
+
+</div>
+
+<div class="busy" id="busy" aria-live="polite"><div class="busy-box">Cargando…</div></div>
+
+<!-- Cámara en vivo (solo si el navegador la permite) -->
+<div class="cam" id="cam" role="dialog" aria-label="Cámara">
+  <div class="cam-inner">
+    <div class="cam-view">
+      <video id="camVideo" playsinline autoplay muted></video>
+    </div>
+    <div class="cam-actions">
+      <button class="cam-shot" id="camShot" type="button" aria-label="Sacar la foto"></button>
+      <button class="cam-cancel" id="camCancel" type="button">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
